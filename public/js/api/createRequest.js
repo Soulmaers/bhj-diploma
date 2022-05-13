@@ -19,19 +19,15 @@ const createRequest = (options = {}) => {
     }
     try {
         xhr.open(options.method, url)
-        if (options.method === 'GET') {
-            xhr.send();
-        } else {
-            xhr.send(formData);
-        }
+        xhr.send(options.method === 'GET' ? null : formData);
+
     } catch (err) {
         options.callback(err);
 
     }
-    xhr.addEventListener('readystatechange', () => {
-        if (xhr.readyState === 4 && xhr.status == 200) {
-            options.callback(null, xhr.response);
-        }
+    xhr.addEventListener('load', () => {
+        options.callback(null, xhr.response);
+
     })
 
 }

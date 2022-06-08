@@ -6,10 +6,11 @@
 const createRequest = (options = {}) => {
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
+    let url;
     if (options.method === 'GET') {
         url += '?';
         for (let key in options.data) {
-            url += '${key}=&{options.data[key]}&';
+            url += `${key}=&{options.data[key]}&`;
         }
     } else {
         formData = new FormData();

@@ -39,13 +39,10 @@ class User {
       url: this.URL + '/current',
       method: 'GET',
       callback: (err, response) => {
-        if (response) {
+        if (response && response.user) {
           this.setCurrent(response.user)
         }
-        else {
-          this.unsetCurrent();
 
-        }
         callback(err, response);
       }
 

@@ -19,8 +19,9 @@ class Sidebar {
    * */
   static initToggleButton() {
     const menu = document.querySelector('.sidebar-toggle');
-    const skin = document.querySelector('body');
-    menu.addEventListener('click', () => {
+    const skin = document.querySelector('.sidebar-mini');
+    menu.addEventListener('click', (e) => {
+      e.preventDefault()
       skin.classList.toggle('sidebar-open');
       skin.classList.toggle('sidebar-collapse');
     })
@@ -38,19 +39,22 @@ class Sidebar {
     const formLogin = document.querySelector(".menu-item_login");
     const formRegister = document.querySelector(".menu-item_register");
     const formLogout = document.querySelector(".menu-item_logout");
-    const reg = App.getModal('register');
-    const login = App.getModal('login');
-    formRegister.addEventListener('click', () => {
-      reg.open();
+
+
+    formRegister.addEventListener('click', (e) => {
+      e.preventDefault();
+      App.getModal('register').open();
     })
-    formLogin.addEventListener('click', () => {
-      login.open();
+    formLogin.addEventListener('click', (e) => {
+      e.preventDefault();
+      App.getModal('login').open();
     })
     formLogout.addEventListener('click', () => {
-      User.logout();
-      if (response.success = true) {
-        App.setState('init');
-      }
+      User.logout((err, response) => {
+        if (response && response.success) {
+          App.setState('init');
+        }
+      })
     })
   }
 }

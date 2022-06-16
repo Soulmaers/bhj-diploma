@@ -14,11 +14,14 @@ class AccountsWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor(element) {
-    this.element = element;
-    this.registerEvents();
-    this.update();
+
     if (!element) {
       throw new Error('Ошибка');
+    }
+    else {
+      this.element = element;
+      this.registerEvents();
+      this.update();
     }
   }
 
@@ -30,13 +33,13 @@ class AccountsWidget {
    * вызывает AccountsWidget.onSelectAccount()
    * */
   registerEvents() {
-    const creatAccountbtn = this.element.querySelector('.create-account');
-    creatAccountbtn.addEventListener('click', () => {
-      App.getModal('createAccount'), open();
+    const creatAccountbtn = document.querySelector('.create-account');
+    creatAccountbtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      App.getModal('createAccount').open();
     })
-    const score = this.element;
-    score.addEventListener('click', (e) => {
-      elAccount = e.target.closest('.account')
+    this.element.addEventListener('click', (e) => {
+      const elAccount = e.target.closest('.account')
       if (elAccount) {
         this.onSelectAccount(elAccount);
       }
@@ -56,10 +59,10 @@ class AccountsWidget {
    * */
   update() {
     if (User.current()) {
-      Account.list(User.current(), (response) => {
-        if (response.success) {
+      Account.list(User.current(), (err, response) => {
+        if (response && response.data) {
           this.clear();
-          responce.data.forEach(elem => {
+          response.data.forEach(elem => {
             this.renderItem(elem);
 
           });
@@ -77,7 +80,7 @@ class AccountsWidget {
    * в боковой колонке
    * */
   clear() {
-    const accountElem = this.element.querySelectorAll('.account');
+    const accountElem = document.querySelectorAll('.account');
     const clearElem = Array.from(accountElem);
     clearElem.forEach(el => {
       el.remove();
@@ -92,15 +95,14 @@ class AccountsWidget {
    * Вызывает App.showPage( 'transactions', { account_id: id_счёта });
    * */
   onSelectAccount(element) {
-    const activScore = document.querySelectorAll('.active');
+    const activScore = document.querySelectorAll('.account');
     const scoreArr = Array.from(activScore);
     scoreArr.forEach(el => {
-      if (el.classList.contains('.active')) {
-        el.classList.remove('.active');
-      }
+      el.classList.remove('.active');
+
     })
-    el.classList.add('.active');
-    App.showPage('transactions', { account_id: id_счёта });
+    element.classList.add('.active');
+    App.showPage('transactions', { account_id: element.dataset.id })
   }
 
 

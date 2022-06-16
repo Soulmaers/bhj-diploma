@@ -6,7 +6,7 @@
 const createRequest = (options = {}) => {
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
-    let url;
+    let url = options.url
     if (options.method === 'GET') {
         url += '?';
         for (let key in options.data) {

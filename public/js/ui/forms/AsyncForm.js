@@ -15,9 +15,10 @@ class AsyncForm {
   constructor(element) {
     if (!element) {
       throw new Error('Ошибка')
+    } else {
+      this.element = element;
+      this.registerEvents()
     }
-    this.element = element;
-    this.registerEvents()
   }
 
   /**

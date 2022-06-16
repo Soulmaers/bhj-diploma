@@ -42,7 +42,6 @@ class Sidebar {
 
 
     formRegister.addEventListener('click', (e) => {
-      e.preventDefault();
       App.getModal('register').open();
     })
     formLogin.addEventListener('click', (e) => {

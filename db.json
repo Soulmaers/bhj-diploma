@@ -134,6 +134,51 @@
     },
     {
       "id": "15yh7083sl4h7b15c"
+    },
+    {
+      "id": "1if1v6wgl4hbdaoi"
+    },
+    {
+      "id": "1if1v9ewl4hyoxty"
+    },
+    {
+      "id": "1if1v9ccl4hywik7"
+    },
+    {
+      "id": "1if1v7y8l4hz0xab"
+    },
+    {
+      "id": "1if1v6j4l4hz5ht3"
+    },
+    {
+      "id": "1if1v9ckl4hz8bv1"
+    },
+    {
+      "id": "1if1v84gl4hza00c"
+    },
+    {
+      "name": "Alex",
+      "email": "certiss@ya.ru",
+      "password": "111",
+      "id": "1if1v6d4l4hzi7eu"
+    },
+    {
+      "id": "1if1v4bsl4hzjoh6"
+    },
+    {
+      "id": "1if1v4qsl4hzmc56"
+    },
+    {
+      "name": "Alexee",
+      "email": "cert@ya.ru",
+      "password": "1",
+      "id": "1if1v3igl4hzregc"
+    },
+    {
+      "name": "Alexee",
+      "email": "a@2.ru",
+      "password": "1",
+      "id": "1if1v8k4l4hzsduz"
     }
   ],
   "accounts": [
@@ -203,6 +248,49 @@
     {
       "user_id": "15yh7083sl4h7b15c",
       "id": "15yh703isl4h7b3tz"
+    },
+    {
+      "user_id": "1if1v6wgl4hbdaoi",
+      "id": "1if1v3lwl4hbe3rt"
+    },
+    {
+      "user_id": "1if1v6wgl4hbdaoi",
+      "id": "1if1v7g0l4hbewgb"
+    },
+    {
+      "user_id": "1if1v6wgl4hbdaoi",
+      "id": "1if1v54sl4hbinse"
+    },
+    {
+      "user_id": "1if1v6wgl4hbdaoi",
+      "id": "1if1v6ogl4hbnm6b"
+    },
+    {
+      "user_id": "1if1v6wgl4hbdaoi",
+      "id": "1if1vvol4hbnqsx"
+    },
+    {
+      "user_id": "1if1v9ckl4hz8bv1",
+      "id": "1if1v81kl4hz8fal"
+    },
+    {
+      "user_id": "1if1v84gl4hza00c",
+      "id": "1if1v93ol4hzfza5"
+    },
+    {
+      "name": "Alex",
+      "user_id": "1if1v6d4l4hzi7eu",
+      "id": "1if1vxol4hziacq"
+    },
+    {
+      "name": "Сбербанк",
+      "user_id": "1if1v8k4l4hzsduz",
+      "id": "1if1v22gl4i022wt"
+    },
+    {
+      "name": "ВТБ",
+      "user_id": "1if1v8k4l4hzsduz",
+      "id": "1if1v50gl4i07pxv"
     }
   ],
   "transactions": [
@@ -340,6 +428,42 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "1if1v57gl4i02dy8",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 70000,
+      "account_id": "1if1v22gl4i022wt",
+      "user_id": "1if1v8k4l4hzsduz",
+      "created_at": "2022-06-17T05:17:57.919Z"
+    },
+    {
+      "id": "1if1v1nwl4i02m9q",
+      "type": "expense",
+      "name": "АА",
+      "sum": 50000,
+      "account_id": "1if1v22gl4i022wt",
+      "user_id": "1if1v8k4l4hzsduz",
+      "created_at": "2022-06-17T05:18:08.701Z"
+    },
+    {
+      "id": "1if1v8hsl4i07xjp",
+      "type": "income",
+      "name": "Alex",
+      "sum": 70000,
+      "account_id": "1if1v50gl4i07pxv",
+      "user_id": "1if1v8k4l4hzsduz",
+      "created_at": "2022-06-17T05:22:16.596Z"
+    },
+    {
+      "id": "1if1v6p8l4i08i10",
+      "type": "expense",
+      "name": "Alex",
+      "sum": 4000,
+      "account_id": "1if1v22gl4i022wt",
+      "user_id": "1if1v8k4l4hzsduz",
+      "created_at": "2022-06-17T05:22:43.139Z"
     }
   ]
 }

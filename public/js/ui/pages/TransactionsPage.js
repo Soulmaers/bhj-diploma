@@ -115,16 +115,16 @@ class TransactionsPage {
    * */
   clear() {
     this.renderTransactions([]);
-    const title = document.querySelector('.content-title').textContent = 'Название счёта';
-    this.renderTitle(title);
-    this.lastOptions = undefined;
+    this.renderTitle('Название счёта');
+    this.lastOptions = null;
   }
 
   /**
    * Устанавливает заголовок в элемент .content-title
    * */
   renderTitle(name) {
-    document.querySelector('.content-title').textContent = name;
+    const title = document.querySelector('.content-title');
+    title.textContent = name;
   }
 
   /**

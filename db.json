@@ -179,6 +179,24 @@
       "email": "a@2.ru",
       "password": "1",
       "id": "1if1v8k4l4hzsduz"
+    },
+    {
+      "name": "Alex",
+      "email": "d@q.ru",
+      "password": "1",
+      "id": "15yh703lsl4i7uwbk"
+    },
+    {
+      "name": "Alex",
+      "email": "certiss@a.ru",
+      "password": "444",
+      "id": "15yh706acl4i8ufwc"
+    },
+    {
+      "name": "Ivan",
+      "email": "a@a.ru",
+      "password": "1",
+      "id": "15yh704iwl4ib7g93"
     }
   ],
   "accounts": [
@@ -291,6 +309,36 @@
       "name": "ВТБ",
       "user_id": "1if1v8k4l4hzsduz",
       "id": "1if1v50gl4i07pxv"
+    },
+    {
+      "name": "Сбербанкл",
+      "user_id": "15yh703lsl4i7uwbk",
+      "id": "15yh708w4l4i7vdmt"
+    },
+    {
+      "name": "Alexa",
+      "user_id": "15yh703lsl4i7uwbk",
+      "id": "15yh708psl4i8a7bo"
+    },
+    {
+      "name": "Сбербанкj",
+      "user_id": "15yh706acl4i8ufwc",
+      "id": "15yh703w4l4i8ulsa"
+    },
+    {
+      "name": "hhh",
+      "user_id": "15yh706acl4i8ufwc",
+      "id": "15yh705z4l4i9bykc"
+    },
+    {
+      "name": "Сбер",
+      "user_id": "15yh704iwl4ib7g93",
+      "id": "15yh7021sl4ib7qyb"
+    },
+    {
+      "name": "Тинькофф",
+      "user_id": "15yh704iwl4ib7g93",
+      "id": "15yh702fwl4ib7yvl"
     }
   ],
   "transactions": [
@@ -464,6 +512,105 @@
       "account_id": "1if1v22gl4i022wt",
       "user_id": "1if1v8k4l4hzsduz",
       "created_at": "2022-06-17T05:22:43.139Z"
+    },
+    {
+      "id": "15yh7096ol4i7vp89",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 100,
+      "account_id": "15yh708w4l4i7vdmt",
+      "user_id": "15yh703lsl4i7uwbk",
+      "created_at": "2022-06-17T08:56:42.872Z"
+    },
+    {
+      "id": "15yh708q8l4i84qr4",
+      "type": "expense",
+      "name": "п",
+      "sum": 5,
+      "account_id": "15yh708w4l4i7vdmt",
+      "user_id": "15yh703lsl4i7uwbk",
+      "created_at": "2022-06-17T09:03:44.751Z"
+    },
+    {
+      "id": "15yh704pol4i85h2t",
+      "type": "income",
+      "name": "к",
+      "sum": 666,
+      "account_id": "15yh708w4l4i7vdmt",
+      "user_id": "15yh703lsl4i7uwbk",
+      "created_at": "2022-06-17T09:04:18.868Z"
+    },
+    {
+      "id": "15yh708zgl4i87cyn",
+      "type": "expense",
+      "name": "а",
+      "sum": 66,
+      "account_id": "15yh708w4l4i7vdmt",
+      "user_id": "15yh703lsl4i7uwbk",
+      "created_at": "2022-06-17T09:05:46.846Z"
+    },
+    {
+      "id": "15yh7097gl4i8ad6o",
+      "type": "income",
+      "name": "e",
+      "sum": 5,
+      "account_id": "15yh708psl4i8a7bo",
+      "user_id": "15yh703lsl4i7uwbk",
+      "created_at": "2022-06-17T09:08:07.103Z"
+    },
+    {
+      "id": "15yh7029kl4i8us63",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 10000,
+      "account_id": "15yh703w4l4i8ulsa",
+      "user_id": "15yh706acl4i8ufwc",
+      "created_at": "2022-06-17T09:23:59.642Z"
+    },
+    {
+      "id": "15yh708lgl4i9c4ce",
+      "type": "expense",
+      "name": "r",
+      "sum": 100,
+      "account_id": "15yh705z4l4i9bykc",
+      "user_id": "15yh706acl4i8ufwc",
+      "created_at": "2022-06-17T09:37:28.573Z"
+    },
+    {
+      "id": "15yh70438l4ib8aio",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 70000,
+      "account_id": "15yh7021sl4ib7qyb",
+      "user_id": "15yh704iwl4ib7g93",
+      "created_at": "2022-06-17T10:30:29.183Z"
+    },
+    {
+      "id": "15yh708qgl4ib8iv6",
+      "type": "income",
+      "name": "Подарок",
+      "sum": 10000,
+      "account_id": "15yh702fwl4ib7yvl",
+      "user_id": "15yh704iwl4ib7g93",
+      "created_at": "2022-06-17T10:30:40.001Z"
+    },
+    {
+      "id": "15yh702z4l4ib8rke",
+      "type": "expense",
+      "name": "Ипотека",
+      "sum": 40000,
+      "account_id": "15yh7021sl4ib7qyb",
+      "user_id": "15yh704iwl4ib7g93",
+      "created_at": "2022-06-17T10:30:51.277Z"
+    },
+    {
+      "id": "15yh706bcl4ib90eu",
+      "type": "expense",
+      "name": "Спиннинг",
+      "sum": 6000,
+      "account_id": "15yh702fwl4ib7yvl",
+      "user_id": "15yh704iwl4ib7g93",
+      "created_at": "2022-06-17T10:31:02.741Z"
     }
   ]
 }

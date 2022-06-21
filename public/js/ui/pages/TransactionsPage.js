@@ -13,11 +13,11 @@ class TransactionsPage {
   constructor(element) {
     if (!element) {
       throw new Error('passed an empty element')
-    } else {
-      this.element = element;
-      this.registerEvents();
-      this.lastOptions;
     }
+    this.element = element;
+    this.registerEvents();
+    this.lastOptions;
+
   }
 
   /**
@@ -56,7 +56,7 @@ class TransactionsPage {
    * */
   removeAccount() {
     if (confirm('Вы действительно хотите удалить счет?')) {
-      let id = document.querySelector('.account.active').getAttribute('data-id');
+      let id = this.lastOptions.account_id;
       Account.remove({
         'id': id
       }, (err, response) => {
@@ -185,10 +185,14 @@ class TransactionsPage {
   renderTransactions(data) {
     const content = document.querySelector('.content');
 
-    content.innerHTML = '';
+    const transaction = data.reduce((acc, el) => {
+      acc += this.getTransactionHTML(el);
+      return acc
+    }, '')
+    content.innerHTML = transaction;
 
-    for (let item of data) {
-      content.innerHTML += this.getTransactionHTML(item);
-    }
+    //for (let item of data) {
+    //  content.innerHTML += this.getTransactionHTML(item);
+
   }
 }

@@ -197,6 +197,24 @@
       "email": "a@a.ru",
       "password": "1",
       "id": "15yh704iwl4ib7g93"
+    },
+    {
+      "name": "arr",
+      "email": "a@3.ru",
+      "password": "2",
+      "id": "1if1v6esl4no38iw"
+    },
+    {
+      "name": "ttt",
+      "email": "a@4.ru",
+      "password": "5",
+      "id": "1if1v8s8l4nortkv"
+    },
+    {
+      "name": "Ivan",
+      "email": "a@5.ru",
+      "password": "1",
+      "id": "1if1v16cl4npj8o3"
     }
   ],
   "accounts": [
@@ -339,6 +357,31 @@
       "name": "Тинькофф",
       "user_id": "15yh704iwl4ib7g93",
       "id": "15yh702fwl4ib7yvl"
+    },
+    {
+      "name": "Альфа",
+      "user_id": "1if1v8k4l4hzsduz",
+      "id": "1if1v6j4l4nnrow7"
+    },
+    {
+      "name": "ВТБ1",
+      "user_id": "1if1v6esl4no38iw",
+      "id": "1if1v6s4l4nom640"
+    },
+    {
+      "name": "8jjj",
+      "user_id": "1if1v8s8l4nortkv",
+      "id": "1if1v7qsl4npabga"
+    },
+    {
+      "name": "ВТБ2",
+      "user_id": "1if1v16cl4npj8o3",
+      "id": "1if1v75cl4npk0nk"
+    },
+    {
+      "name": "Сбербанк1",
+      "user_id": "1if1v16cl4npj8o3",
+      "id": "1if1v3ysl4nplbpv"
     }
   ],
   "transactions": [
@@ -611,6 +654,51 @@
       "account_id": "15yh702fwl4ib7yvl",
       "user_id": "15yh704iwl4ib7g93",
       "created_at": "2022-06-17T10:31:02.741Z"
+    },
+    {
+      "id": "1if1v7dgl4nnryj1",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 5000,
+      "account_id": "1if1v6j4l4nnrow7",
+      "user_id": "1if1v8k4l4hzsduz",
+      "created_at": "2022-06-21T04:20:33.036Z"
+    },
+    {
+      "id": "1if1v5zsl4npahvv",
+      "type": "income",
+      "name": "5y",
+      "sum": 999,
+      "account_id": "1if1v7qsl4npabga",
+      "user_id": "1if1v8s8l4nortkv",
+      "created_at": "2022-06-21T05:02:57.546Z"
+    },
+    {
+      "id": "1if1v4osl4npkdeu",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 20000,
+      "account_id": "1if1v75cl4npk0nk",
+      "user_id": "1if1v16cl4npj8o3",
+      "created_at": "2022-06-21T05:10:38.309Z"
+    },
+    {
+      "id": "1if1v8vol4npkms2",
+      "type": "expense",
+      "name": "еда",
+      "sum": 5000,
+      "account_id": "1if1v75cl4npk0nk",
+      "user_id": "1if1v16cl4npj8o3",
+      "created_at": "2022-06-21T05:10:50.449Z"
+    },
+    {
+      "id": "1if1v6ccl4nplhng",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 50000,
+      "account_id": "1if1v3ysl4nplbpv",
+      "user_id": "1if1v16cl4npj8o3",
+      "created_at": "2022-06-21T05:11:30.459Z"
     }
   ]
 }

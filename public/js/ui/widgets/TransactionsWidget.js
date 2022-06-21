@@ -16,10 +16,9 @@ class TransactionsWidget {
     if (!element) {
       throw new Error('Ошибка')
     }
-    else {
-      this.element = element;
-      this.registerEvents();
-    }
+    this.element = element;
+    this.registerEvents();
+
   }
   /**
    * Регистрирует обработчики нажатия на

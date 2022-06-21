@@ -43,11 +43,13 @@ class User {
         if (response && response.user) {
           this.setCurrent(response.user)
         }
-
+        else {
+          this.unsetCurrent();
+        }
         callback(err, response);
       }
-
     })
+
   }
 
   /**

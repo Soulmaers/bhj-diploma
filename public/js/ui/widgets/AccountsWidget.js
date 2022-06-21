@@ -18,11 +18,10 @@ class AccountsWidget {
     if (!element) {
       throw new Error('Ошибка');
     }
-    else {
-      this.element = element;
-      this.registerEvents();
-      this.update();
-    }
+    this.element = element;
+    this.registerEvents();
+    this.update();
+
   }
 
   /**

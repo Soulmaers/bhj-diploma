@@ -20,12 +20,7 @@ const createRequest = (options = {}) => {
                 url += `${key}=${options.data[key]}&`;
             }
         }
-        try {
-            xhr.open(options.method, url, true);
-
-        } catch (e) {
-            options.callback(e);
-        }
+        xhr.open(options.method, url);
     }
 
     else {
@@ -35,17 +30,6 @@ const createRequest = (options = {}) => {
         }
         xhr.open(options.method, options.url);
     }
-
-
-    try {
-
-        xhr.send(options.method === 'GET' ? null : formData);
-
-    } catch (err) {
-        options.callback(err);
-
-    }
-
-
+    xhr.send(options.method === 'GET' ? null : formData);
 }
 

@@ -16,9 +16,8 @@ class UserWidget {
     if (!element) {
       throw new Error('Ошибка')
     }
-    else {
-      this.element = element;
-    }
+    this.element = element;
+
 
   }
 
